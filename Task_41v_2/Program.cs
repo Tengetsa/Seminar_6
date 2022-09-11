@@ -3,7 +3,7 @@
 Console.Write("Введите числа через пробел: ");
 int[] array = Array.ConvertAll(Console.ReadLine()!.Split(), int.Parse);
 
-void FillArray(int[] array, int count = 0)
+void CountPositiveNumber(int[] array, int count = 0)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -12,7 +12,7 @@ void FillArray(int[] array, int count = 0)
             count++;
         }
     }
-    Console.WriteLine($"Кол-во чисел > 0: {count}");
+    Console.WriteLine($"Количество чисел > 0: {count}");
 }
 
-FillArray(array);
+CountPositiveNumber(array);

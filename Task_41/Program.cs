@@ -4,7 +4,7 @@ Console.Write($"Введи число М (количество чисел): ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] NumberOfNumbers = new int[size];
 
-void InputNumbers(int size)
+void IntroductoryNumbers(int size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -22,5 +22,5 @@ void CountPositiveNumber(int[] array, int count = 0)
     Console.WriteLine($"Чисел больше ноля {count}");
 }
 
-InputNumbers(size);
+IntroductoryNumbers(size);
 CountPositiveNumber(NumberOfNumbers);
